@@ -2,13 +2,20 @@
 #   Programming Assignment 10
 #     Prob-3.py
 
-# <YOUR NAME>
+# Eddy
+
 
 def main():
-    # your code here
-
-    # do not change the while loop definition below
+    total = 0
     while True:
-        # your code here
+        usernumber = float(
+            input("enter a number, or enter a negitve number to stop: "))
+        if usernumber >= 0:
+            total = total + usernumber
+        else:
+            break
 
-main()    
+    print("the grand total is: ", total)
+
+
+main()
